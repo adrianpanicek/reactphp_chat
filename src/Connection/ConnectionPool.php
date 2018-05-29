@@ -20,7 +20,7 @@ final class ConnectionPool {
 	{
 		$user = new User($this, $connection, sprintf("%05d", mt_rand(0, 99999)));
 		$user->init();
-		$this->connections[] = $user;
+		$this->users[] = $user;
 	}
 	
 	/**
